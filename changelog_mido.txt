@@ -4,6 +4,16 @@ Device: Redmi Note 4
 Device maintainer: KamiKaonashi
 
 ====================
+     07-10-2023
+====================
+
+update cheetah fingerprint
+introduce Viper4FX
+kernel optimizations
+drop KSU from kernel
+device tree clean up
+
+====================
      27-08-2023
 ====================
 
