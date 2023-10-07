@@ -3,6 +3,18 @@ Device: Xiaomi Mi 9 SE (Grus)
 Device maintainer: elpaablo
 
 ====================
+     07-10-2023
+====================
+
+* AlphaDroid 1.10
+* Handled AoD FOD issues
+* Changed vibrator implementation
+* Added vibration intensity control
+* Added USB2.0 fastcharge support
+* Updated KernelSU
+
+
+====================
      28-08-2023
 ====================
 
