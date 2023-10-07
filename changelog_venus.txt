@@ -4,6 +4,14 @@ Device: Xiaomi Mi 11
 Device maintainer: KamiKaonashi
 
 ====================
+     07-10-2023
+====================
+
+add Viper4FX
+device tree cleanup
+kernel optimizations
+
+====================
      28-08-2023
 ====================
 
