@@ -38,3 +38,17 @@ Device maintainer: Cr1st1anlp
 - Added support  DC DImming
 - Change to kernel Blaze 210
 - Fixed some hdr problems on youtube
+
+====================
+     07-09-2023
+====================
+- Fixed crash some games ( arena breakout etc. )
+- Build with lasted Blaze kernel thanks to Paul Piro dev
+- Enable Multi-gen LRU
+- Enable suspended ram for idle drain
+- Enable spatializer effect for wired headset
+- Added gallery global for spanish
+- Added gallery editor
+- Update leica to versión 5
+- Added suport Kprofiles
+- Others improvements under the hood
