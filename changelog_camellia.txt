@@ -2,10 +2,18 @@ Highlights & Device Specific Changes:
 Build type: Monthly
 Device: Xiaomi Redmi Note 10(T) 5G / 11SE / Poco M3 Pro 5G
 Device maintainer: NaokoShoto
-Required firmware: v14.0.5.0
+Required firmware: MIUI 14+
 
 ====================
-     13-04-2023
+     08-10-2023
+====================
+
+- Added Vanilla Builds
+- Backend improvements
+- Merging changes on main device trees
+
+====================
+     13-09-2023
 ====================
 
 - Aperture replaces GcamGo (thanks to @noah_allen)
@@ -16,7 +24,7 @@ Required firmware: v14.0.5.0
 - Merging changes on main device trees
 
 ====================
-     09-04-2023
+     04-09-2023
 ====================
 
 - Initial Official Build
