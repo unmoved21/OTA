@@ -4,6 +4,13 @@ Device: Xiaomi Redmi Note 8
 Device maintainer: Agatha
 
 ====================
+     08-10-2023
+====================
+- Sync latest source
+- Revert "ginkgo: Enable config_avoidGfxAccel"
+- More Improvement And Stability
+
+====================
      27-08-2023
 ====================
 - Sync latest source
