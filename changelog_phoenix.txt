@@ -4,23 +4,24 @@ Device: Xiaomi Redmi K30 / Poco X2
 Device maintainer: JAYMISTRY258
 
 ====================
-     08-27-2023
+     10-09-2023
 ====================
 - Latest Source Synced
 - Initial Official Build
-- August 2023 Security Patch
-- Alza-v2.1 kernel by default
-- Upstreamed kernel to 4.14.323
+- October 2023 Security Patch
+- Alza-v2.2 kernel by default
+- Upstreamed kernel to 4.14.326
 - Upstreamed KSU Support
 - Added Fast Charging Support
 - Added Moto Dolby Atmos
 - Added Xiaomi Leica Camera
 - Added Google Photos Unlimited Storage
 - Added Netflix Spoof
+- Droped Smart Charging & Battery Health tracker
 - Safetynet Passed by default
 
 Disclaimer :-	This version of Alza Kernel is based
-		on Pure Kernel by PZQQT
+				on Pure Kernel by PZQQT
 
 ====================
      Known Issue
@@ -31,350 +32,343 @@ Themed Icons not working
 ====================
    Tips & Tricks
 ====================
+- Use Leica Camera Documents mode fix zip available in support group
 - Use any module or apk from playstore to use Themed Icons
 
 ====================
-     08-26-2023
+     10-09-2023
 ====================
-
-   * frameworks/base
-fb4c0f8fb690 UDFPS pressed color overlay: display available choices and go back to default cyan
-
-   * packages/apps/AlphaSettings
-f5be981 UDFPS default pressed color: get it from the corresponding overlay
-
-   * packages/apps/Settings
-51eaf8118e Revert "Gestures: disable broken features"
-
-====================
-     08-25-2023
-====================
-
-   * frameworks/base
-55e318fb0bef Status bar: disable call strength icon by default
-2c7b46fef7e5 SettingsLib: Restore WIFI_CALL_STRENGTH_ICONS
-cc78f5c386cd SystemUI: Combined signal icons toggle [1/2]
-8361ff503555 Revert "Revert^2 "Remove support for COMBINED_SIGNAL_ICONS""
-f096969efb88 core: jni: Switch to -O3
-b2528dd90584 fixup! back gesture haptic feedback
-b496674bae51 Merge branch alpha-13-wip of https://github.com/alphadroid-   */frameworks_base into alpha-13
-
-   * hardware/qcom-caf/wlan
-4b250ac qcwcn: Address format compilation issues
-07cd5bf Merge tag 'LA.VENDOR.13.2.0.r1-16100-KAILUA.0' of https://git.codelinaro.org/clo/la/platform/hardware/qcom/wlan into HEAD
-
-   * packages/apps/AlphaSettings
-48f8b12 QS header images: set defaults
 
    * packages/apps/Dialer
-ccffa67c0 Dialer: Revamp swipes to new functionalities
-040d6a04a Dialer: Introduce swipe to call
+deda9d388 New translations (#78)
+
+   * packages/apps/GameSpace
+37d8868 New Crowdin updates (#52)
+
+   * packages/apps/Settings
+061e3a8acf Update Alpha logo and Alpha Settings header
+4d9943bd26 fixup! Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
 
    * vendor/gms
-1458d52 Update setup wizard dependencies and settings services
+52a25b7 Fix typo
 
 ====================
-     08-24-2023
+     10-08-2023
+====================
+
+   * packages/apps/Jelly
+3248b14 Jelly: Don't use ktx extension to set OnBackPressedCallback
+90608ab Jelly: Move HttpURLConnection.getCharset to an extension
+56552b4 Jelly: Redo reach mode configuration
+da90d8e Jelly: Use SAM conversion where possible
+2d94d8d Jelly: Use onBackPressedDispatcher
+1d1497c Jelly: Show secure lock icon as soon as we know URL is https
+cddade0 Jelly: Decrease search bar font size
+8ffaefc Jelly: Adjust search bar image layout starts
+e683af0 Jelly: Per website location perm
+25ae4e5 Jelly: Update AGP to 8.1.2
+
+   * vendor/lineage
+5b4c0559 Bump AlphaDroid version to 1.10
+
+====================
+     10-07-2023
+====================
+
+   * frameworks/base
+4a7ff16d3feb Fix custom qs header image not being persistent across reboots
+
+   * packages/apps/AlphaSettings
+27b1751 New Crowdin updates (#34)
+
+====================
+     10-06-2023
 ====================
 
    * build/make
-1b73a1b9b ro.adb.secure logic is defined on vendor/lineage/alpha.mk
-d652c7ceb Introduce AlphaDroid
-
-   * build/soong
-b4a0fdd29 Add Alpha dumpvars
-
-   * device/qcom/sepolicy-legacy-um
-fd5f0ffc legacy: common: Label discard_max_bytes for SDB devices
+2a97be2a3 Bump platform security patch date to 2023-10-01
 
    * frameworks/base
-2c1ea5dd350b SettingsLib: Redesign and animate Battery and storage progress bars
-ce93e4c03401 Perf:Fix the issue that activity boost duration abnormal.
-fc52acd02159 BoostFramework: Guard it with overlay
-62ee569681d6 OverScroller: Import BoostFramework.ScrollOptimizer
-16abf73b78e7 Filter multi-layer cases for pre-rendering
-d4e79ce5d964 perf: Add lock protection for initialization in ScrollOptimizer
-56def6d242b5 core: Port CLO's Framework Boost
-ace36769635d Revert "Services: Boost gesture flings"
-4135149aedd9 SystemUI: Enable monochromatic monet style
-7e9f0eed777b bootanimation: Always use normal bootanimation
-e654e131eade BrightnessUtils: Allow maintainer to set desired brightness curve impl (#32)
-0d0b66efc672 Restore QS footer data usage
-33b71c62f995 base: rework QS panel styles implementation
-b0f19a050498 Systemui: Add Misc Wifi/Network icon Customization[1/2]
-6ab69614bb69 base: Data icon style[1/3]
-cb78e3cbbaaa QS header images: backup and validate settings
-cb1e4b73fe51 base: QS header images extended [1/2]
-edc36df649a3 base: Introduce Smart 5G service [1/2]
-f6ad54a9ce7a SystemUI: Add QS Page Custom Transition Animations [1/2] Signed-off-by: ariffjenong <arifbuditantodablekk@gmail.com>
-097a23bd7f17 Make DPC respect overlaid min/max brightness values
-aa886903dc08 SystemUI: add more QS Header Images
-4cff1564d543 fixup! Revert "Keyguard: Allow user configurable fingerprint wake-and-unlock"
-c9c6a137be05 SettingsLib: make EntityHeader background transparent
-210130e957a5 CollapsingToolbar: change titleCollapseMode to scale
-0e58cd2635e7 Add Portuguese and Turkish translations for settings restart dialog
-57a393708775 Redesign seekbar
-89298f5d7f9b SystemUI: Add 14 New VoLTE icon [1/2
-5433dbf070e3 SystemUI: Add Vivo X60 Pro VoLTE Icon [1/2]
-91f6ec72baab SystemUI: Add 2 more VoLTE icons [1/2]
-fade141021d2 VoLTE: return our favorite "VO" icon
-cd4e820c6f4d SystemUI: user selectable VoWiFi Icons [1/2]
-9579d96e3279 SystemUI: Add EMUI VoLTE icon [1/2]
-3b2ecf8c05e1 Add MIUI 11 VoLTE icon [1/2]
-3e9bfdac24bd User Selectable VoLTE Icons [1/2]
-9a257c1747c7 BatteryMeterView: simplify scale logic
-c669752676fa Battery Styles: Add Landscape iOS battery styles from Iconify [1/2]
-c8a1b9934de5 base: Hide ADB and developer setting enable status [1/2]
-bd636ce7a6e5 SystemUI: Improve QS notification expansion animation
-d0b535df1a04 Use ro.adb.secure to set default value of developer options
-15c7e1d891e3 overlays: Exclude from Google backup [1/2]
-9fcdaeba0a29 SystemUI: Add more clock bg chip styles [1/2]
-e9ec85a6becb don't crash apps that depend on missing Gservices provider
-1012beaa7e22 Do not backup APKs that do not have `allowBackup` attr on it's manifests
-1a3e2fc3e9f1 colorUtils: Remove translucent checks
-bab1dc8fcc74 Make QS tiles haptic feedback optional (1/2)
-b8c21bfa2cc3 HACK: telephony: Conditionally force enable LTE_CA
-b476f023c6f8 SystemUI: Statusbar clock background chip styles [1/2]
-4d292c5b5cf6 SystemUI: UdfpsController: Disable Night Light on keyguard
-b8c00a152e21 SystemUI: Always refresh power menu on config change
-2ec13bb1974a Fw_base - Rotation anim to Power and reboot menu [1/2]
-22e44cca6852 FWBase: Add 7 more power menu animations [1/2]
-3ca9a0d7fa9e Power Menu animations [1/2]
-262a18724395 SystemUI: Volume styles [1/2]
-79f8926f367c VolumeDialog: Fit the app icon to its view bounds
-b2d5b116a091 SystemUI: Fix per-app volume icon paddings
-edd4bf02496e  SystemUI: Redesign Volume Panel
-35471c80aa4d Revert "VolumePanel: Add long click for expand icon"
-a2da0f301dc7 SystemUI: Align the qs carrier text to its gravity bias
-51227d018f41 SystemUI: add Alpha logo
-42143746cb59 SettingsLib: add category for Alpha settings
-967b0ff28351 Add Alpha to metrics constants
-e680d60719af Introduce Custom settings layout
-fb02ba92c165 Introduce Custom settings layout
-8668816e2975 speedup window animation scale
-556f47f575b7 android.view: reduce animation speeds
-8d396771bcf2 sounds: Import rice system sound effects pack
-7aaec850dccf Reduce CollapsingToolBar height
-be47e9baa695 CollapsingToolBar: reduce scrim visible height
-de400856d9f0 CollapsingToolBar: change scrim color so it keeps transparency effect
-9fbcc3ab7202 base: Allow locking tasks to recents [1/2]
-97f69c9a5e13 SystemUI: unify keyguard font style
-3b48f54a30c3 [squash] Add monet customization [1/2]
-e6b9d72ad840 SystemUI: Display 2 rows when using 3 columns
-7dcff5ab8a4b fwb: Link more elements to `config_dialogCornerRadius `
-8909c32cdccd ViewConfiguration: Update fling velocity for modern devices
-616dc340caf5 base: SettingsLib: Change collapsed header color to match background color
-7e31d74acf32 base: Add support for UI Styles
-016deb2a7358 Base: Ignore window secure flags [1/2]
-d5fa42f48a73 Move status bar paddings overlays
-bb4933c39683 SystemUI: Controllable squiggle animation [1/2]
-c8c0fa452b80 Set default udfps color transparent
-2d5c550a6327 SystemUI: FOD pressed colors [1/2]
-73d092c703c9 Battery Styles: Added 9 more battery styles [1/2]
-beb178e1d91c Add Ambient Customizations [1/2]
-08d31f580744 Seekbar for left/right status bar paddings [1/2]
-6bb8b03afc68 statusbar:  allow user to customize max visible notification icons [1/2]
-6d0613c33eb3 base: set scrolling friction to 0.006f
-b6cc47c7d888 AbsListView: Improve scrolling cache
-31dcce8eeadc Create AlphaDroid resources placeholders
-356b4e7f7ba8 New Crowdin updates (#1018)
-
-   * packages/apps/AlphaSettings
-fe3edd1 AlphaSettings: Add Misc Wifi/Network icon Customization[2/2]
-
-   * packages/apps/Aperture
-a75c7d4 Aperture: Update CameraX to 1.3.0-rc01
-dc35baf Aperture: Fix QR dialog actions scroll view
-a283250 Aperture: Remove unused resources and ids
-4666568 Aperture: Fix re-enabling microphone after video has started
-deb8766 Aperture: Update androidx.media3 to 1.1.1
-
-   * packages/apps/Dialer
-3c17e49ca Dialer: Remove useless toolbar shadow
-9e641615d Dialer: Fix statusbar on light theme
-aa52863ca Dialer: Properly set navigation bar theme
-4c12bc087 New Crowdin updates (#69)
-0e9934092 Update Crowdin configuration file
-b9c01ea98 Dialer: add proper-ish Direct Boot support
-075b7cd6b Fix unnatural animation while move up "Swipe down to reject"
-fade81b67 Dialer: Rework empty illustrations
-91dbda408 Dialer: Move Sensor settings to Other settings
-8d3429709 Dialer: Add toggle for post call snackbar
-9d8b80d42 Dialer: Add ability to set full screen photos for calls
-e45e8a538 use aidl: local_include_dirs
-84a16ffe5 Remove Time use.
-a55f82290 Dialer: Blind and crude attempt of getting Visual Voicemail working on AT&T USA
-d4b1f020c Dialer: Set vvm_type_omtp for all OMTP VVM configs
-0aad117d8 Dialer: Fix LetterTileDrawable for all languages
-ac37ef746 Dialer: import VVM config from 73.0.414822266
-c06263a20 InCallUI: SmartMute
-13b51bb89 dialer: Add back missing priv-app permission
-1a2254734 Add missing permissions to Dialer
-13bce65d9 Dialer: Use system fonts
-88d2d33a7 Fix NPE in InCallPresenter
-de1af22af Fix to show voice mail notification icon for multi-sim
-314299959 Dialer: Manifest: Enable READ_EXTERNAL_STORAGE permission
-1ac24eaf6 Fix Dialer memory leaks
-40f04c6cc Dialer: Add option to disable proximity sensor
-841a2846d Dialer: CallLogFragment: Move Un-registering call log observer to destroy
-7d9a25442 Dialer: Add autorecord feature
-68ebfbe37 Dialer: CallRecordingAutoMigrator: Handle all exceptions
-e0f535d27 Dialer: Make recording names sortable
-07241692a Dialer: Enable call recording for all
-337bbf915 Dialer: Lookup: Remove OpenCnam
-10182b2c6 Dialer: Lookup: Fix Das Telefonbuch
-780bf75b2 Dialer: Remove some static java libraries
-b05086b35 Dialer: Modify CleanSpec
-38962394f Dialer: Introduce asking for default dialer role
-014f9ced3 Dialer: Redesign InCallUI
-38eb3ab62 Dialer: Lookup: Remove Auskunft / PeopleLookup
-dd383d477 Dialer: OpenStreetMap: It knows case-insensitivity now!
-bbe896fd5 Dialer: Remove GoogleForwardLookup
-c6e629fcf Dialer: Add styling to Location permission dialog
-a7fc52d01 Dialer: Only ask for location permissions if required
-eae6003ba Dialer: Fix NearbyPlaces Lookup
-8706f8fa8 Dialer: Align contacts tab with Messaging
-eb9a1a692 Dialer: Style AudioRouteSelector
-cf79f481f Dialer: InCallUI: Show chosen audio text
-5d8a22638 Dialer: Apply rounded edges to all AlertDialogs
-5cb14fe68 Dialer: Remove CommandLine [22/x]
-7f657916e Dialer: Remove InstallIn annotation [21/x]
-3bd43a23a Dialer: Remove more unused stuff [20/x]
-d36f20d73 Dialer: Merge ConstantsImpl into Constants [19/x]
-742560c01 Dialer: Remove Bindings [18/x]
-569e61935 Dialer: Remove EnrichedCall [17/x]
-727d9e379 Dialer: Remove remainder of DUO [16/x]
-d83214677 Dialer: Remove unused Utilities [15/x]
-d59bffa45 Dialer: Remove Bubble [14/x]
-05cb38bd0 Dialer: Remove Logger and Spam Module [13/x]
-aa68440aa Dialer: Collapse manifests and remove duplicate permission [12/x]
-f2361736f Dialer: Start converting to AndroidX [11/x]
-82a499f04 Dialer: Remove NeededForTesting and VisibleForTesting [10/x]
-208407989 Dialer: Remove Transcription [9/x]
-d6a53ff4d Dialer: Remove even more dead code [8/x]
-560567212 Dialer: more possible cleanups [7/x]
-378dab3f1 Dialer: Various fixes for MD3 [6/x]
-7bf091db1 Dialer: set equal marginTop and Bottom (#16)
-6bdf586b5 Dialer: Fix video call simulation
-b756f78db Dialer: Improve Bottom Nav colors
-8123b7659 Dialer: Use Material You theming for incallui dialpad
-31989fc6a Dialer: Improve Material You design
-d326332e4 Dialer: Always use Material You gradient for incall UI
-021dde27d Dialer: Apply Material you design
-a20d53a4e Dialer: Use dialer_theme_color as accent
-abc50c8c9 Dialer: Use Material You colors
-a5314dd2c Dialer: Remove more targets [5/x]
-4b35c7386 Dialer: Remove excluded code [4/x]
-26d6e56d0 Dialer: Remove unused Fragments [3/x]
-27fc32c76 Dialer: Replace pngs with xml drawables [2/x]
-0fa4f0a19 Dialer: Remove compatibility (1/x)
-ae1cfff1b Dialer: Redesign DisambigDialog
-714447cf1 Dialer: Don't show the same number twice
-9cfe3542a Dialer: Show New Favorites
-5db2358b5 Dialer: A little bit of You
-
-   * packages/apps/crDroidSettings
-9646811 New Crowdin updates (#1067)
-
-   * vendor/addons
-916c6008 Revert "Iconpacks: drop a few icons"
-
-   * vendor/lineage
-82ff8913 Drop RepainterService
-
-====================
-     08-23-2023
-====================
-
-   * art
-247d3a86dc Remove duplicate function for clearing GC stats
-
-   * frameworks/base
-fc27e1c8fa86 Add a null pointer check for getSubscriptionsInGroup
-
-   * packages/apps/Contacts
-c586e5be7 Contacts: Don't display duplicate numbers
-
-   * vendor/addons
-6faab653 Drop PUI settings overlay
-
-====================
-     08-22-2023
-====================
-
-====================
-     08-21-2023
-====================
-
-   * external/dtc
-ada0bce Add build support for more host utils
-c714c86 libfdt: Correct the string size while renaming fragments in property
-4db2742 libfdt: Add subnode at end of parent
-983719b overlay_fixup_phandle: Save entire fixup string and length
-19061e5 overlay_add_to_local_fixups: Set fixup_str to value
-0c2bc9d libfdt: overlay_rename_fragments: handle no fragments in base dtb
-cb2e960 fdtoverlaymerge: A tool that merges overlays
-444adbf libfdt: overlay_merge: Copy over various nodes and their properties
-ef95dbf libfdt: overlay_merge: remove resolved symbols
-c766452 libfdt: overlay_merge: Ignore unresolved symbols
-9d44534 libfdt: overlay_merge: Rename fragments
-b01f833 libfdt: overlay_merge: Introduce fdt_overlay_merge()
-
-====================
-     08-20-2023
-====================
-
-====================
-     08-19-2023
-====================
-
-   * packages/apps/Aperture
-c03c5b5 Aperture: Reformat code [2/2]
-2f99055 Aperture: Reformat code [1/2]
-9caba8c Aperture: Avoid binding camera without permissions
-c3ca7cd Aperture: Get rid of SuppressLint
-b826e85 Aperture: Redo edge-to-edge configuration
-1b56acc Aperture: Remove useless no-action-bar style items from camera theme
-6d2cd0b Aperture: Fix some Android Studio warnings
-
-   * packages/apps/crDroidSettings
-e57e7f4 crdroid: doze: Fix up default values for doze and AOD
-
-====================
-     08-18-2023
-====================
-
-   * bootable/recovery
-45a9b259 recovery: Bypass reboot prompt for sideload-auto-reboot
-
-   * frameworks/base
-54d510039a33 SystemUI: Launch power menu from QS only if enabled
-8efb8bfd83ab core: legacy toasts deserve rounded corners too
-c6168bef1e0d Fix invalid code link, update exception message
-8fc5de3c4dcd Handle out-of-bound array index in FastDataInput
-605b97571740 bootanimation: do not create texture for parts with count=1
-9f5c95f35b00 SystemUI: Resolve crash when updating control list services
-c715305bcd76 apex: Prevent illegal state exception caused by GMS concurrent alarms
-cac34bf88fff libs: PipTaskOrganizer: do not start fade out animation for pip if surfacecontrol leash is null
-7ad023b48fe8 Adopted Storage: Prepare user storage before move
-cb127421fcaf Avoid duplicate map lookups in RemoteConnectionManager.
-18f02ce0ce0d Don't use String8::empty
-4d892fbb24fd Merge pull request #1019 from MJPollard/13.0
+b2235ada1285 Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/frameworks/base into alpha-13
+f65c2fb9d9eb Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/frameworks/base into alpha-13
 
    * frameworks/native
-de9300ba61 Revert "Always provide metadata blob for hdr frames"
-fd432f87c5 libbinder_rs doesn't need libutils
+0f15a56dca Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/frameworks/native into alpha-13
+8d0cd7c436 Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/frameworks/native into alpha-13
+
+   * packages/apps/Aperture
+1004933 Aperture: Swap HDR off drawable with a smaller one
+
+   * packages/apps/Jelly
+6acf56a Jelly: Update Gradle to 8.4
+
+   * packages/apps/Settings
+bf180697ec Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
+55f7d301e5 Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD
+
+   * packages/modules/Bluetooth
+8a432a063d Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/packages/modules/Bluetooth into alpha-13
+ea01a29610 Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/packages/modules/Bluetooth into alpha-13
+
+   * packages/modules/Wifi
+ad14e88b4f Merge tag 'android-platform-13.0.0_r12' of https://android.googlesource.com/platform/packages/modules/Wifi into alpha-13
+b65b73e4cb Merge tag 'android-platform-13.0.0_r11' of https://android.googlesource.com/platform/packages/modules/Wifi into alpha-13
+
+   * system/sepolicy
+d53d0b855 Merge 'lineage-20.0' into 13.0
+
+====================
+     10-05-2023
+====================
+
+   * device/google/atv
+f40342f atv: Build SettingsIntelligence
+
+   * external/libvpx
+3691689 VP8: disallow thread count changes
+
+   * frameworks/base
+a051306d2552 Revert "Systemui: Add Misc Wifi/Network icon Customization[1/2]"
+18cadd9defcf Chip styles: adjust colors and sync with Settings
+a94c2ae57333 fixup! SystemUI: Implement burn-in protection for status/navbar
+2ad956c9d1a7 SystemUI: Add Resizable QS header Space[1/2]
+033c94f44b3e SystemUI: Introduce preferred network tile
+fdefc0cdd236 Update Origami and MiUI Pill battery styles
+f37838503c2d base: Allow to always show the time in media player [1/2]
+84d4595c0d0d Clock: Statusbar Clock Customization [1/2] Add Clock size, color & font style.
+926ce5653a6d Clock: Add ability to resize QS & Statusbar Clock [1/2]
+8a17d826f4d6 PIH: update cheetah and felix fingerprints to Semptember 2023
+14c37b471066 FPSInfo: adjust top margin
+a967ae5db5ef Merge tag 'android-13.0.0_r82' of https://android.googlesource.com/platform/frameworks/base into alpha-13-wip
+928ee426e453 fwb: silence batteryexternalstatsworker spam
+e1c7e027c388 Battery Styles: Add MIUI pill battery icon
+1f13a7141380 Battery styles: add Origami battery icon
+2dc36c319d67 SurfaceControl: Prevent crash when surfacecontrol is null
+bf42dde83cc4 DeviceConfig: Skip read permission enforcement for google apps
+7908f7b8807b ViewConfiguration: Disable fading marquee
+1c6b09c55bdf Fix system reboot in systm_server caused by SensorPrivacyService
+fe7e77aa3956 Remove UPDATED_SYSTEM_APP from updated system apps no longer exist
+b8f73d4efe91 base: Double tap to trigger doze [1/2]
+24db865efc5e base: Allow setting wake for notification separately from doze [1/2]
+09611847221b base: Extend showing Ambient instead of fully waking to single tap gesture [1/2]
+d5238476d3a3 base: Allow showing Ambient instead of fully waking [1/2]
+21e52ce1c88e core: block 2022+ pixel experience xmls to ASI
+3c658d1eb3d7 SettingsProvider: Resolve package name that requires permission
+27ec2d24f1bd Allow required Android Auto permissions
+3a0dcdc52ce8 PIHooks: Update fingerprints to August 2023.
+228486967626 PIHooks: Set HARDWARE, ID values
+42ced5964eb0 PIHooks: Spoof pixel fold to google services
+28754338e8ed PIHooks: limit google camera spoofing to pixel 6 series
+1a2b49f1f7e5 PIHooks: Spoof Pixel 7 Pro to Google Camera
+b7c020e65aa3 PIHooks: Un-spoof GMS while adding google account
+cfff44c0affd core: Workaround for ASI crash
+38be948c7508 PropImitationHooks: Spoof GMS apps for pixel-exclusive features * Switch to felix and update to r66 fp
+49885be089b0 PropImitationHooks: Prepare and refactor * createGoogleSpoofProps method * if-else block -> switch block
+c3dc80e97f9e PropImitationHooks: Update cheetah fp to July 2023
+e5a392152cc3 PropImitationHooks: Fix google restore issue Original commit: minaripenguin/android_frameworks_base@260a631
+9837bca76ef6 PropImitationHooks: Update to cheetah June 2023 FP
+fcb25aee6087 PropImitationHooks: Add toggle for google photos spoofs
+a8e6b9ebc848 PropImitationHooks: Spoof gms with Pixel 2
+247711746186 PropImitationHooks: Update to cheetah May 2023 FP
+c856f61daa92 PropImitationHooks: Spoof Pixel 7 Pro to some Google apps
+46d6f71ffdd8 PropImitationHooks: Spoof Pixel XL to pass CTS/Play Integrity
+aea8d0925ef5 Introduce PropImitationHooks
+a1a185321248 PixelProps: Drop current pixelprop impl
+e1b7c41aadc9 services: permissions: Prevent apps from crashing when removing new permissions
+34d1917b3402 add missing perm for restore
+ac1917d7e076 Do not drop app permissions on hibernate
+ca1ce8c67062 aapt: Default to 0 compression ratio
+754ff413cf8f Fix NullPointerException in the fingerprint pre-enrollment process
+6aaaf83a3470 Fix some memory and handlers leakage
+85bce4a83dfe Volume panel: avoid multiple animations on touch spam
+5d5138cc76bd SystemUI: Fix black screen after DOZE
+4dcb4c566ca3 fixd for IOException when call loadStateFromFilesystem function
+9f7e5c1d94d3 AutoFillUI: Don't show a "null" toast
+3b54feb3582b TtsEngines: avoid crashes caused by null engine name
+9b61f0e11e0a KernelCpuUidTimeReader: Always check if `remove_uid_range` file exists
+5c0edbb03100 core: Enable freeform/multiple windows feature by default
+578cef9e3b84 SystemUI: add percentage view to brightness bar [1/2]
+4df3893c5ca6 SettingsLib: make MainSwitchPreference background transparent
+cba5c4587db0 DeviceConfig: Change setProperties behavior
+8e1f074ff288 DeviceConfigUtils: Make debug optional
+01331d27afd6 Implement DeviceConfigUtils and service
+788445d2df18 fixup! QSFooter: Launch AlphaDroid Settings when long clicking settings
+139e654ecfef Smart5gService: guard it with overlay
+1d1303f4c744 FPSInfoService: Revamp FPS counter
+2c970707207d SystemUI: Grant INTERACT_ACROSS_USERS_FULL permission for smartspace
+9157fb9e25a7 Extend optional haptic feedback on back gesture to new affordance
+c2ce80fc69ab SystemUI: Extend back gesture visibility to new affordance
+b5fed07dd47c SystemUI: Optional haptic feedback for back gesture [1/2]
+c9bc98c96dbb Partially revert "Optional haptic feedback on back gesture [1/2]"
+a07dbb6362e6 SystemUI: Resolve crashes caused by allowing the reinflation of SystemUI.
+3eecaef348ad SystemUI: Prevent back invocations callbacks from trigerring long swipe action
+68563b8601e7 SystemUI: Back gesture affordance improvements
+28c6ab69c946 SystemUI: Edge long press implementation for new back affordance
+bc2771b1a536 SystemUI: Enable new back gesture affordance
+6e3b3afd2fa4 NotificationChannel: Fix URI failures caused by securityException
+e0c0823e3895 SystemUI: Re-evaluate theme when changing VoLTE or VoWiFi Icons
+4912bf3f47e9 base: Fix scheduled AOD/Sleep mode
+58cd7bc3019b [SQUASH] base: Allow scheduling always on display [1/2]
+9398e8ebad95 overlays: Update notchbarkiller overlays
+019446379b82 overlays: Add notchbar killer for left-notch devices
+65e46b0577d6 overlays: Add notch bar killer
+db8f672eb959 Pixel fixup: UdfpsView: insert a condition on illumination dot logic
+0caa6db13722 Pixel fixup: UDFPS: trigger onFingerDown with regular action down events
 
    * packages/apps/AlphaSettings
-6c47aa1 AlphaSettings: Data icon style[2/3]
+c3df26b CustomSeekBarPreference: fix plus/minus color issues
+
+   * packages/apps/Aperture
+da28f76 Aperture: Drop android.nonTransitiveRClass
+05e87f6 Aperture: Enable setup-java@v3 cache
+4bf39d5 Aperture: Update AGP to 8.1.2
+413eca7 Aperture: Update Gradle to 8.3
+0c14d6a Aperture: Move data classes and enum classes to models package
+5bdaf99 Aperture: Remove unused import
+4b40d87 Aperture: CapturePreviewLayout: Remove callback defined in XML layout
+c3c6a81 Aperture: Hook up video mirror mode
+
+   * packages/apps/Jelly
+6b308e0 Jelly: Move Baidu suggestion provider to HTTPS
+5355fde Jelly: Remove custom parser for Brave
+212c262 Jelly: Drop Google encrypted
+aa11787 Jelly: Enable setup-java@v3 cache
+72890bc Jelly: Fix custom app links
+6ff463d Jelly: Add .dev suffix to debug build type configuration
+a1c391e Jelly: Register shortcuts programatically
+a2336dd Jelly: Remove hardcoded application id where possible
+
+   * packages/apps/Recorder
+3b626a4 Recorder: Enable setup-java@v3 cache
+f119808 Recorder: Remove not needed & 0xff
+4d384f8 Recorder: Use Math.abs() instead of manually inverting sign
+12f51ca Recorder: Write the actual buffer rather then expected size
+54bf14b Recorder: Bump to latest stable AGP & Gradle versions
+
+====================
+     10-04-2023
+====================
+
+   * hardware/lineage/compat
+015d90b libbase: Shim old StartsWith function prototype
+
+   * packages/apps/Aperture
+b349c8a Aperture: Hook up video dynamic range
+4d1eedf Aperture: Hook up gerrit-vote action
+
+   * packages/apps/Jelly
+6bfa087 Jelly: Add GitHub Actions
+
+   * packages/apps/Recorder
+ef513e8 Recorder: Add GitHub Actions
+7ce9ce8 Recorder: Use generateBp plugin
+8c8858f Recorder: Add .dev suffix to debug build type configuration
+1c8070e Recorder: Convert gradle scripts to kotlin
+
+   * system/sepolicy
+65ac550f6 Revert "DO NOT MERGE Revert "Hide ro.debuggable and ro.secure from ephemeral and isolated applications""
+9692d63a5 Revert "DO NOT MERGE Revert "Drop back-compatibility for hiding ro.debuggable and ro.secure""
+a680bef68 Revert "DO NOT MERGE Revert "Disallow untrusted apps to read ro.debuggable and ro.secure""
+
+====================
+     10-03-2023
+====================
+
+   * device/qcom/sepolicy_vndr-legacy-um
+cbee1b7f atoll: Label discard_max_bytes sysfs
+d170498f sepolicy_vndr: Fix wakeup labels for (msmnile|msmsteppe|atoll)
+c0295b8c sepolicy_vndr: Allow NFC HAL to access vendor data folder
+7549c3d7 sepolicy_vndr: Allow qti_init_shell to set watermark boost factor
+d1bda5f0 sepolicy_vndr: Allow to run e2fsck over dsp partition
+
+   * hardware/qcom-caf/thermal
+3e27340 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0
+
+====================
+     10-02-2023
+====================
+
+   * packages/apps/Aperture
+988c6c9 Automatic translation import
 
    * packages/apps/Contacts
-c2b6143e8 Set Notification Channel for Sending Parsing Notification
+6599e37cf Grant Permanent Write Uri Permission
+c203bae37 Set Notification Channel for Sending Parsing Notification
+bc25152b4 Contacts: Fix navigation bar theming
+6aaf690a9 Contacts: Fix LetterTileDrawable for all languages
+c6a0ac023 Send group mail from Contacts Label cause app to crash
+f98941d18 Contacts: silence logs about getDrawable without theme
+7509e96e7 Contacts: MD3-ify more
 
-   * vendor/addons
-803b23d4 fixup: Do not allow backups of overlays
-9fab4a8a Merge pull request #6 from helliscloser/alpha-13
+   * packages/apps/DocumentsUI
+9bea494fb Automatic translation import
 
-   * vendor/lineage
-cf708671 Add allowBackup flag (false) to rro overlays
+   * packages/apps/Eleven
+79c5567b Automatic translation import
+
+   * packages/apps/Etar
+19a00c2a Automatic translation import
+
+   * packages/apps/Jelly
+858ef3f Automatic translation import
+
+   * packages/apps/Messaging
+17cab33 Messaging: Fix input text box background on light mode
+1578d70 Messaging: support notification channels
+e314761 Remove uses of Time.
+7f8128b Messaging: Improve letter render decisioning for avatar
+dc47f97 Messaging: Fix activity bar menu icons tint
+c6d9127 Messaging: Replace AOSP illustrations
+77feabd SimIconView: Don't intercept touch events when there's nothing to do
+09c6e3e Messaging: Do not check preferred sim if conversation sim exist
+ef9f81f Add support for text/vCard and text/vCalendar MIME type
+591bdc9 add check before casting
+3e51f18 Messaging: Use light icons on conversations select menu
+
+   * packages/apps/Recorder
+ba9cb7c Automatic translation import
+
+   * packages/inputmethods/LatinIME
+64f83f8f3 LatinIME: Default to Material You theme
+9119b6d47 LatinIME: Add libjni_latinimegoogle for swype
+8f454ba9b LatinIME: Fix NPE in KeyboardTheme
+68a1799ed LatinIME: Update Material You spacebar language color
+
+   * vendor/crowdin
+4992eff Automatic translation import
+
+====================
+     10-01-2023
+====================
+
+   * external/chromium-webview/patches
+cb3cf4a Update Chromium Webview to 117.0.5938.140
+
+   * external/chromium-webview/prebuilt/arm
+9ad9550 Update Chromium Webview arm prebuilt to 117.0.5938.140
+
+   * external/chromium-webview/prebuilt/arm64
+798fe58 Update Chromium Webview arm64 prebuilt to 117.0.5938.140
+
+   * external/chromium-webview/prebuilt/x86
+72ab76f Update Chromium Webview x86 prebuilt to 117.0.5938.140
+
+   * external/chromium-webview/prebuilt/x86_64
+c065fc8 Update Chromium Webview x86_64 prebuilt to 117.0.5938.140
+
+====================
+     09-30-2023
+====================
+
+   * hardware/qcom-caf/thermal
+23baaf1 thermal-hal: Add HAL v2 support for sdm632
+
+   * packages/apps/GameSpace
+93b399e Gamespace: Cleanup notification modes
+f708e21 GameSpace: Fix notification listener service
+411f9f3 GameSpace: Import new game illustration from motorola
+853b0f3 GameSpace: Add missing permission usage for Danmaku service
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr
+3c0a7c4 ipacm: Address ipacm start failure
 
