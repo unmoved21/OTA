@@ -52,3 +52,14 @@ Device maintainer: Cr1st1anlp
 - Update leica to versión 5
 - Added suport Kprofiles
 - Others improvements under the hood
+
+====================
+     09-09-2023
+====================
+- Fixed disabling speakerphone during call
+- Fixed Fixed sound when connecting bluetooth headphones
+- Added enabled search in settings
+- Added quick tap 
+- Sound improvements
+- Others improvements under the hood
+
