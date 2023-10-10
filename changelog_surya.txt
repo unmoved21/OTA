@@ -4,12 +4,10 @@ Device: Poco X3 NFC (surya)
 Device maintainer: Carlos Arriaga (TheStrechh)
 
 ====================
-    28-08-2023
+    10-10-2023
 ====================
 Device tree:
-- Update blobs from V14.0.2.0.SJGMIXM
-- Drop camera.sensor* properties
-- Bringup property_contexts for Android 13
+- surya: sepolicy: Drop duplicated wakeup node 
 
 Kernel tree:
 - drivers: Update KernelSU
