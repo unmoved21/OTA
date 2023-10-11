@@ -4,13 +4,13 @@
 			"maintainer": "Pyrtle93",
 			"oem": "Google",
 			"device": "7Pro",
-			"filename": "AlphaDroid-13.0-20230905-cheetah--v1.8.zip",
-			"download": "https://sourceforge.net/projects/alphadroid-project/files/cheetah/AlphaDroid-13.0-20230905-cheetah--v1.8.zip/download",
-			"timestamp": 1693862038,
-			"md5": "a04f510c2f262ff105072c8b9a32472d",
-			"sha256": "648dae3c4be18ab0483a13c774de3016d90c81e69140f08e5e0e9a4c7b8661b2",
-			"size": 2744094557,
-			"version": "1.8",
+			"filename": "AlphaDroid-13.0-20231012-cheetah-gapps-v1.10.zip",
+			"download": "https://sourceforge.net/projects/alphadroid-project/files/cheetah/AlphaDroid-13.0-20231012-cheetah-gapps-v1.10.zip/download",
+			"timestamp": 1697051752,
+			"md5": "bde1b0a4e3b5f424c521a19ca3cc2eb2",
+			"sha256": "0f47f819a83bf3b82ddf15f3a42c35c0d23d946c04d4ff769c9a839158d701cd",
+			"size": 2213286403,
+			"version": "1.10",
 			"buildtype": "gapps",
 			"forum": "",
 			"gapps": "",
@@ -26,4 +26,3 @@
 		}
 	]
 }
-
