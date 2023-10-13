@@ -3,6 +3,53 @@ Build type: Monthly
 Device: Poco F5 / Redmi Note 12 Turbo
 Device maintainer: JYR_RC
 
+=====13/10/2023=====
+
+-Introduce displayfeature color services
+
+-Implement pocket detection service
+
+-Enable config_doze pulsepickup
+
+-Disable smooth display in settings
+
+-Enable toggle Refresh rate
+
+-Enable toggle Dolby Atmos
+
+-Added stock config_rounded_mask
+
+-Added battery friendly pocket mode
+
+-Disable FEAS support
+
+-Disable One vision support
+
+-Import audio_effects.XML
+
+-Added qcom implementation for audio effects
+
+-Added Oneplus dolby and Ldac Support
+
+-Minor changes and stabilty 
+
+-Update kernel Melt linux 5.10.194 Clang versión 12.0.5-version 2.2.7
+
+-Update Changes support Leica Camera
+
+-Ota Supported
+
+
+
+
+
+
+Highlights & Device Specific Changes:
+Build type: Monthly
+Device: Poco F5 / Redmi Note 12 Turbo
+Device maintainer: JYR_RC
+
+
 =====31/08/2023=====
 
 -Build Hotfix
@@ -27,13 +74,11 @@ Highlights & Device Specific Changes:
 Build type: Monthly
 Device: Poco F5 / Redmi Note 12 Turbo
 Device maintainer: JYR_RC
-<<<<<<< HEAD
 =====08/08/2023 =====
 
 -Update Sources 1.7.9
 -Small changes in stability
 -New oneplus audio codecs
-=======
 
 
 ===== 27/08/2023 =====
@@ -62,13 +107,6 @@ Device maintainer: JYR_RC
 -Qualcomm TrueWireless™ Stereo
 
 -Added refresh rate in settings
-
-
-
-
->>>>>>> bec6069 (Update 1.8 Marble)
-
-
 
 
 
