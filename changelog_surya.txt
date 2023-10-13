@@ -4,10 +4,14 @@ Device: Poco X3 NFC (surya)
 Device maintainer: Carlos Arriaga (TheStrechh)
 
 ====================
-    10-10-2023
+    13-10-2023
 ====================
 Device tree:
-- surya: sepolicy: Drop duplicated wakeup node 
+- surya: Update from V14.0.5.0.SJGEUXM
+- surya: Enable casefolding support on userdata
+- surya: Drop duplicated vendor.qti.ims.rcsconfig entry in proprietary-… 
+- surya: rootdir: Set no_sehash_xattr on /mnt/vendor/persist
+- Fix refresh rate on settings
 
 Kernel tree:
 - drivers: Update KernelSU
