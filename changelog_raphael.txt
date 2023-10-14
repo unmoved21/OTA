@@ -3,6 +3,37 @@ Device: Redmi K20 Pro / Mi 9T Pro (Raphael)
 Device maintainer: onettboots
 
 ====================
+     14-10-2023
+====================
+
+• Disable ART debug and optimize dexpreopt
+• Support and enabled single tap sensor by deafult
+• Bringback CLO FW Boost
+• Add swap width and height feature
+• Disable continuous transaction tracing on all build types
+• Enable debug.sf.auto_latch_unsignaled
+• Updated Adreno 640 blobs to version 053.50 
+• Disable Zram writeback
+• Updated Leica cam to 5.0
+
+==============
+Kernel changelogs
+==============
+
+• Update zram stuff from @pwnzr kernel
+• Merged to clo tag LA.UM.9.1.r1-14200-SMxxx0.QSSI14.0
+• Update Kernel Su to 0.6.9
+• Merge to latet linux 4.14 stable and google android 4.14 stable
+• Add Sbalance optimatimization
+• update FOD new impl and display stuff from @pwnzr kernel
+• Add new gpu freq table from @LyNcHP1N also tested
+• Updated simple_lmk
+• Fixed USB PD (C to C) Fast Charging to Max 18w 
+• Add single tap support on screen off @pwnzr
+
+
+
+====================
      23-07-2023
 ====================
 
