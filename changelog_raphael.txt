@@ -12,7 +12,7 @@ Device maintainer: onettboots
 • Add swap width and height feature
 • Disable continuous transaction tracing on all build types
 • Enable debug.sf.auto_latch_unsignaled
-• Updated Adreno 640 blobs to version 053.50 
+• Updated Adreno 640 blobs to version 0530.50 
 • Disable Zram writeback
 • Updated Leica cam to 5.0
 
@@ -28,7 +28,7 @@ Kernel changelogs
 • update FOD new impl and display stuff from @pwnzr kernel
 • Add new gpu freq table from @LyNcHP1N also tested
 • Updated simple_lmk
-• Fixed USB PD (C to C) Fast Charging to Max 18w 
+• Fixed USB PD (C to C) Fast Charging to Max 33w 
 • Add single tap support on screen off @pwnzr
 
 
