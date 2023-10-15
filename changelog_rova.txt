@@ -4,6 +4,18 @@ Device: Redmi 4A/5A (rova)
 Device maintainer: @maxx459
 Required firmware: V10.1.1.0.NCKMIFI (Nougat Firmware)
 
+
+====================
+     27-08-2023
+====================
+- Synced latest source
+- Updated audio and media HALs
+- fintune media perf xml
+- Fixed broken "Connect to Wifi" feature in Tasker app
+- Fixed random System app crash due to Lineage Health feature
+- Optimized overall performance & battery backup
+- Some minor fixes and improvements
+
 ====================
      27-08-2023
 ====================
